@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SecondActivity">
+
+	<TextView
+		android:id="@+id/lbl_saved_data"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+		android:text="Saved data = "
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/tv_saved_data"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+		app:layout_constraintBaseline_toBaselineOf="@+id/lbl_saved_data"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/lbl_saved_data"
+		tools:text="Some saved data" />
+
+	<TextView
+		android:id="@+id/lbl_notifications_state"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+		android:text="Notifications state = "
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/lbl_saved_data" />
+
+	<TextView
+		android:id="@+id/tv_notifications_state"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp"
+		app:layout_constraintBaseline_toBaselineOf="@+id/lbl_notifications_state"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@+id/lbl_notifications_state"
+		tools:text="Disabled" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
